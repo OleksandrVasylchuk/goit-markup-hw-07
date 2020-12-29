@@ -153,5 +153,53 @@
     margin-bottom: 10px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.conditions {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    display: inline-block;
+  }
+  .form-label-checkbox label {
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-black-color);
+  }
+  .form-label-checkbox{
+      position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .policy-label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    transition: var(--transition-time-and-function);
+  }
+  .custom-checkbox:checked + .policy-label::before {
+    background-image: url(../images/Vector\ \(1\).svg);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
 
 /* ==========form end========= */
