@@ -165,6 +165,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  
 
 .conditions {
     font-size: 14px;
@@ -182,7 +183,7 @@
   }
   .form-label-checkbox{
       position: relative;
-    margin-bottom: 30px;
+   
   }
   
   .policy-label::before {
@@ -196,10 +197,9 @@
     transition: var(--transition-time-and-function);
   }
   .custom-checkbox:checked + .policy-label::before {
-    background-image: url(../images/Vector\ \(1\).svg);
+    background-image: url(/images/vector.svg);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
   }
-
 
 /* ==========form end========= */
